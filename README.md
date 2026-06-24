@@ -300,6 +300,4 @@ AI Engineer | Computer Vision | Generative AI | RAG Systems
 
 ---
 
-## ⭐ Support
 
-If you like this project, consider giving it a star on GitHub.
