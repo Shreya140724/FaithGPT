@@ -1,24 +1,29 @@
 # ✝️ FaithGPT
 
-FaithGPT is an AI-powered Christian Assistant that combines Bible Question Answering, Memory-Based Conversations, Prayer Generation, Daily Bible Verses, and Christian Image Generation into a single modern web application.
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![Next.js](https://img.shields.io/badge/Next.js-Frontend-black)
+![Ollama](https://img.shields.io/badge/Ollama-Local_LLM-purple)
+![Qwen2.5](https://img.shields.io/badge/Qwen-2.5-orange)
+![LangChain](https://img.shields.io/badge/LangChain-RAG-brightgreen)
+![FAISS](https://img.shields.io/badge/VectorDB-FAISS-red)
+![SQLite](https://img.shields.io/badge/Database-SQLite-lightgrey)
+![HuggingFace](https://img.shields.io/badge/Embeddings-BGE--Small-yellow)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
-Built using:
-
-* FastAPI
-* Next.js
-* Ollama
-* FAISS Vector Database
-* HuggingFace Embeddings
-* SQLite
-* Tailwind CSS
+AI-powered Christian Assistant with Bible Question Answering, Personal Memory, Prayer Generation, Daily Bible Verses, Christian Image Generation, and Chat History Management.
 
 ---
 
-## Features
+## ✨ Features
 
 ### 📖 Bible Chat (RAG)
 
-Ask questions about the Bible and receive answers grounded in Scripture.
+* Scripture-grounded Bible Question Answering
+* FAISS Semantic Search
+* Context-based Answers
+* Verse References
+* Hallucination Reduction
 
 Examples:
 
@@ -26,8 +31,6 @@ Examples:
 * Explain Romans 8:28
 * What does the Bible teach about patience?
 * Tell me about Moses
-
-The system retrieves relevant Bible verses using FAISS semantic search and generates contextual answers using a local LLM through Ollama.
 
 ---
 
@@ -39,14 +42,13 @@ Examples:
 
 * My name is Shreya
 * I am an AI Engineer
+* I am learning Artificial Intelligence
 
-Later you can ask:
+Ask later:
 
 * What is my name?
 * What do you know about me?
 * What am I learning?
-
-Memory-based questions are answered from stored conversation history.
 
 ---
 
@@ -54,39 +56,38 @@ Memory-based questions are answered from stored conversation history.
 
 Generate personalized Christian prayers.
 
+Includes:
+
+* Prayer
+* Encouragement
+* Bible References
+
 Examples:
 
 * Pray for my career
+* Pray for my future
 * Pray for my family
-* Pray for anxiety and stress
-* Pray for guidance
-
-Each response includes:
-
-* Personalized prayer
-* Biblical encouragement
-* Relevant Bible references
+* Pray for anxiety
 
 ---
 
 ### 🖼 Christian Image Generation
 
-Generate Christian-themed AI images from text prompts.
+Generate AI-powered Christian images.
 
 Examples:
 
 * Jesus walking on water
-* Moses parting the Red Sea
 * Garden of Gethsemane
-* Noah's Ark during sunset
-
-Images are generated locally and displayed directly in the application.
+* Moses parting the Red Sea
+* Noah's Ark at sunset
+* Angel appearing to Mary
 
 ---
 
 ### ✝ Daily Bible Verse
 
-Displays a randomly selected Bible verse each time the application loads.
+Displays a random daily verse on application startup.
 
 Examples:
 
@@ -96,48 +97,40 @@ Examples:
 
 ---
 
-### 🗑 Chat History Management
-
-Features:
+### 🗑 Chat History
 
 * New Chat
-* Conversation History
+* History Sidebar
 * Delete Individual Chats
-* Memory Storage
+* Persistent Storage
 
 ---
 
-## Architecture
+## 🏗 Architecture
 
 User Question
 
 ↓
-
 Next.js Frontend
 
 ↓
-
 FastAPI Backend
 
 ↓
-
 FAISS Retriever
 
 ↓
-
 Bible Context
 
 ↓
-
-Ollama (Qwen 2.5)
+Qwen 2.5 via Ollama
 
 ↓
-
-Generated Answer
+Generated Response
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 
 ### Frontend
 
@@ -153,16 +146,75 @@ Generated Answer
 * SQLite
 * Ollama
 
-### AI Components
+### AI Stack
 
 * Qwen 2.5
 * FAISS
 * HuggingFace Embeddings
-* RAG Pipeline
+* LangChain
+* Retrieval-Augmented Generation (RAG)
 
 ---
 
-## Installation
+## 📂 Project Structure
+
+FaithGPT/
+
+├── backend/
+
+│ ├── main.py
+
+│ ├── services/
+
+│ ├── rag/
+
+│ ├── models/
+
+│ └── database.py
+
+│
+
+├── frontend/
+
+│ ├── src/
+
+│ ├── app/
+
+│ ├── components/
+
+│ └── public/
+
+│
+
+├── data/
+
+│ └── bible.csv
+
+│
+
+├── screenshots/
+
+│ ├── home.png
+
+│ ├── bible-chat.png
+
+│ ├── memory.png
+
+│ ├── prayer.png
+
+│ └── image-generation.png
+
+│
+
+├── requirements.txt
+
+├── README.md
+
+└── .gitignore
+
+---
+
+## 🚀 Installation
 
 ### Clone Repository
 
@@ -170,15 +222,17 @@ git clone https://github.com/yourusername/FaithGPT.git
 
 cd FaithGPT
 
-### Backend
+---
 
-cd backend
+### Backend Setup
 
 pip install -r requirements.txt
 
 uvicorn backend.main:app --reload
 
-### Frontend
+---
+
+### Frontend Setup
 
 cd frontend
 
@@ -188,58 +242,64 @@ npm run dev
 
 ---
 
-## Ollama Models
-
-Install:
+### Install Ollama Model
 
 ollama pull qwen2.5
-
-Start:
 
 ollama serve
 
 ---
 
-## Future Improvements
-
-* Voice Assistant
-* Bible Verse Search
-* Multi-language Support
-* User Authentication
-* Conversation Export
-* Bible Study Plans
-* Christian Devotional Generator
-
----
-
-## Screenshots
+## 📸 Screenshots
 
 ### Home Page
 
-(Add screenshot)
+(Add Screenshot)
 
 ### Bible Chat
 
-(Add screenshot)
-
-### Prayer Assistant
-
-(Add screenshot)
-
-### Image Generation
-
-(Add screenshot)
+(Add Screenshot)
 
 ### Memory Feature
 
-(Add screenshot)
+(Add Screenshot)
+
+### Prayer Assistant
+
+(Add Screenshot)
+
+### Image Generation
+
+(Add Screenshot)
+
+### Chat History
+
+(Add Screenshot)
 
 ---
 
-## Author
+## 🔮 Future Improvements
+
+* Voice Assistant
+* Bible Study Planner
+* Verse Search Engine
+* Multi-language Support
+* User Authentication
+* Devotional Generator
+* Audio Prayer Generation
+
+---
+
+## 👩‍💻 Author
 
 Shreya Sidabache
 
 M.Tech Artificial Intelligence
 
 AI Engineer | Computer Vision | Generative AI | RAG Systems
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a star on GitHub.
