@@ -254,27 +254,20 @@ ollama serve
 
 ### Home Page
 
-(Add Screenshot)
+![Home Page](screenshots/UI.jpg)
 
 ### Bible Chat
 
-(Add Screenshot)
-
-### Memory Feature
-
-(Add Screenshot)
+![Bible Chat](screenshots/biblechat.jpg)
 
 ### Prayer Assistant
 
-(Add Screenshot)
+![Prayer Assistant](screenshots/prayer.jpg)
 
 ### Image Generation
 
-(Add Screenshot)
+![Image Generation](screenshots/Image.jpg)
 
-### Chat History
-
-(Add Screenshot)
 
 ---
 
