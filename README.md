@@ -9,7 +9,7 @@
 ![FAISS](https://img.shields.io/badge/VectorDB-FAISS-red)
 ![SQLite](https://img.shields.io/badge/Database-SQLite-lightgrey)
 ![HuggingFace](https://img.shields.io/badge/Embeddings-BGE--Small-yellow)
-![License](https://img.shields.io/badge/License-MIT-blue)
+
 
 AI-powered Christian Assistant with Bible Question Answering, Personal Memory, Prayer Generation, Daily Bible Verses, Christian Image Generation, and Chat History Management.
 
